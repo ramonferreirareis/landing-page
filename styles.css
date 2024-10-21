@@ -1,3 +1,17 @@
+:root {
+    --font: 'Roboto',sans-serif;
+    --dark-bg: #371f2b;
+    --white-st: #F9FAF8;
+    --white-wk: #E5E7EB;
+    --pink:#e787b7;
+    --text-b: 48px;
+    --text-m: 36px;
+    --text-s: 24px;
+    --text-ss: 18px;
+}
+
 img {
     width: 300px;
+    
 }
+
