@@ -10,8 +10,35 @@
     --text-ss: 18px;
 }
 
+body { 
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 img {
     width: 300px;
     
 }
+
+.logo {
+    width: 40px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 8px;
+    background-color: var(--dark-bg);
+}
+
+.links {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    font-size: var(--text-ss);
+    color: var(--white-wk);
+}
+
 
