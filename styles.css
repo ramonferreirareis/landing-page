@@ -13,11 +13,17 @@
 body { 
     display: flex;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
+    justify-content: center;
+    font-family: var(--font);
 }
 
-img {
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 2px solid lime; */
+}
+
+.info img {
     width: 300px;
     
 }
@@ -28,7 +34,7 @@ img {
 
 .header {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 8px;
     background-color: var(--dark-bg);
 }
@@ -42,3 +48,40 @@ img {
 }
 
 
+.intro,
+.bg {
+    width: 350px;
+    flex-shrink: 0;
+    
+}
+
+h1 {
+    color: var(--white-st);
+    font-size: 48px;
+    font-weight: 900;
+}
+
+
+.intro p {
+    font-size: var(--text-ss);
+    color: var(--white-wk);
+    
+}
+
+button {
+    background-color: var(--pink);
+    color: var(--white-st);
+    padding: 8px 16px;
+    border: none;
+    border-radius: 10px;
+}
+
+.hero-margin {
+    margin-block: 8px;
+}
+
+.right-side {
+    display: flex;
+    flex-direction: column;
+
+}
