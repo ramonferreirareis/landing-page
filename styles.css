@@ -19,7 +19,7 @@
 body { 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     font-family: var(--font);
 }
 
@@ -35,12 +35,45 @@ body {
     width: 40px;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    padding: 8px;
-    background-color: var(--dark-bg);
+a {
+    text-decoration: none;
+    color: var(--white-st);
 }
+
+.header {
+    background-color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    padding: 16px 300px;
+    /* width: 100%;  */
+    gap: 30px;
+    
+}
+
+.top-header,
+.bottom-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-header {
+    gap: 10px;
+    
+}
+
+.bg {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 
 .links {
     list-style: none;
@@ -48,19 +81,6 @@ body {
     gap: 16px;
     font-size: var(--text-ss);
     color: var(--white-wk);
-}
-
-
-.intro,
-.wrapper {
-    flex: 1;
-
-}
-
-.wrapper .bg {
-    object-fit: contain;
-    max-width: 100%;
-    height: auto;
 }
 
 h1 {
@@ -89,34 +109,27 @@ button {
     margin-block: 8px;
 }
 
-.left-side,
-.right-side {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-
 /* INFORMATION */
 
 .info {
     text-align: center;
     background-color: var(--white-st);
-    padding: 36px;
+    padding: 36px; 
 }
 
 .info h2 {
     color: var(--dark-bg);
     font-size: var(--text-m);
     font-weight: 900;
-    padding: 20px;
+    padding: 20px; 
 }
 
 .images {
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     gap: 32px;
     flex: 1;
+    flex-wrap: wrap;
 }
 
 .img {
@@ -172,7 +185,7 @@ blockquote {
 .sign-up-box {
     background-color: var(--pink);
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 60%;
     justify-content: space-evenly;
     padding-block: 30px;
     border-radius: 8px;
@@ -191,4 +204,15 @@ blockquote {
 .call-action-button {
     border: 2px solid var(--white-st);
     align-self: center;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--dark-bg);
+    color: var(--white-st);
+    padding-block: 30px;
+    font-weight: 300;
 }
